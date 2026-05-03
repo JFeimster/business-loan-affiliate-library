@@ -66,13 +66,11 @@ const Navbar = () => {
         </div>
         {/* CTA button */}
         <div>
-          <a
-            href=""
-            type="button"
-            className="rounded-lg border bg-theme px-4 py-2 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-orange-500 focus:z-10 focus:outline-hidden focus:ring-4 focus:ring-gray-100 sm:px-5 sm:py-2.5"
-            target="_blank">
-            Write for us
-          </a>
+          <Link
+            href="/blogs/business-loan-affiliate-programs-complete-guide"
+            className="rounded-lg border bg-theme px-4 py-2 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-orange-500 focus:z-10 focus:outline-hidden focus:ring-4 focus:ring-gray-100 sm:px-5 sm:py-2.5">
+            Start Here
+          </Link>
         </div>
       </div>
     </nav>
