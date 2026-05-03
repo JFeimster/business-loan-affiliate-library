@@ -4,18 +4,18 @@ import './globals.css'
 
 const quicksand = Quicksand({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] })
 
-const title = 'Resources Library'
+const title = 'Business Loan Affiliate Library'
 
 const description =
-  'Discover a curated collection of the latest resources, templates, and strategies designed to help you excel in technical interviews and build your expertise with confidence'
+  'Guides, comparisons, and playbooks for monetizing business funding traffic.'
 
 const url = process.env.NEXT_PUBLIC_SITE_URL
 
 export const metadata: Metadata = {
-  applicationName: 'Learn Now',
+  applicationName: 'Business Loan Affiliate Library',
   title,
   description,
-  category: 'education',
+  category: 'finance',
   alternates: {
     canonical: url,
   },
@@ -24,14 +24,13 @@ export const metadata: Metadata = {
     title,
     description,
     url,
-    siteName: 'Learn Now',
+    siteName: 'Business Loan Affiliate Library',
     type: 'website',
   },
   twitter: {
     title,
     description,
     card: 'summary_large_image',
-    creator: '@Basit_Miyanji',
   },
 }
 
