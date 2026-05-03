@@ -23,8 +23,8 @@ export default async function Home() {
 
         <section className="mt-12">
           <SectionHeading
-            title={['Latest', 'Articles']}
-            subtitle="Diverse Range of articles related to Artificial Intelligence"
+            title={['Latest', 'Guides']}
+            subtitle="Fresh guides and playbooks for business funding affiliates, referral partners, publishers, and loan broker marketers."
           />
 
           <div className="grid gap-x-14 gap-y-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -36,8 +36,8 @@ export default async function Home() {
 
         <section className="my-16">
           <SectionHeading
-            title={['Popular', 'Articles']}
-            subtitle="Diverse Range of articles related to Artificial Intelligence"
+            title={['Popular', 'Resources']}
+            subtitle="Start with the core business loan affiliate guides, program comparisons, compliance basics, and monetization playbooks."
           />
 
           <BlogList posts={posts} type="horizontal" />
