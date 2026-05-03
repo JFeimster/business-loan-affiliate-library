@@ -22,6 +22,12 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'api.iconify.design',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
   // Optionally, add any other Next.js config below
