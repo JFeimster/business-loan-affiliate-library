@@ -27,12 +27,12 @@ const socialLinks = [
   },
 ]
 
-const institutes = {
-  title: 'Institutes',
+const categories = {
+  title: 'Categories',
   items: [
-    { label: 'Udemy', href: `` },
-    { label: 'Coursera', href: `` },
-    { label: 'Frontend Masters', href: `` },
+    { label: 'Affiliate Guides', href: `/` },
+    { label: 'Best Programs', href: `/` },
+    { label: 'Compliance', href: `/` },
   ],
 }
 
@@ -40,24 +40,18 @@ const quickLinks = {
   title: 'Quick Links',
   items: [
     {
-      label: 'Blogs',
+      label: 'Guides',
       href: `/blogs`,
     },
   ],
 }
 
-const myWork = {
-  title: 'My Work',
+const resources = {
+  title: 'Resources',
   items: [
-    { label: 'Codevertiser', href: 'https://www.codevertiser.com/' },
-    {
-      label: 'Quiz App Template',
-      href: 'https://github.com/AbdulBasit313/React-Quiz-App-Template',
-    },
-    {
-      label: 'JS Bytes Newsletter',
-      href: 'https://codevertiser.substack.com/',
-    },
+    { label: 'Complete Guide', href: '/blogs/business-loan-affiliate-programs-complete-guide' },
+    { label: 'Affiliate Disclosure', href: '/affiliate-disclosure' },
+    { label: 'Editorial Policy', href: '/editorial-policy' },
   ],
 }
 
@@ -70,11 +64,11 @@ const Footer = () => {
             <Link href="/" className="mb-8 flex items-center gap-5 text-white">
               <Image
                 src="https://res.cloudinary.com/dyvkdwzcj/image/upload/v1709055594/logo-1_vo1dni.png"
-                alt="LearnNow"
+                alt="Business Loan Affiliate Library"
                 width={40}
                 height={40}
               />
-              <h6 className="text-3xl font-medium tracking-wider">LearnNow</h6>
+              <h6 className="text-3xl font-medium tracking-wider">BLA Library</h6>
             </Link>
 
             <div className="max-w-64">
@@ -82,9 +76,9 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h6 className="mb-7 text-xl text-white">{institutes.title}</h6>
+            <h6 className="mb-7 text-xl text-white">{categories.title}</h6>
             <ul>
-              {institutes.items.map(({ label, href }) => (
+              {categories.items.map(({ label, href }) => (
                 <li
                   key={label}
                   className="mt-3 text-base font-normal text-[#767E94] transition-all duration-150 ease-in hover:text-white hover:underline hover:decoration-[#00AAFF] hover:underline-offset-8">
@@ -104,22 +98,20 @@ const Footer = () => {
                 </li>
               ))}
               <li className="mt-3 text-base font-normal text-[#767E94] transition-all duration-150 ease-in hover:text-white hover:underline hover:decoration-[#00AAFF] hover:underline-offset-8">
-                <a href="" target="_blank">
-                  Write for us
-                </a>
+                <Link href="/blogs/business-loan-affiliate-programs-complete-guide">
+                  Start Here
+                </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h6 className="mb-7 text-xl text-white">{myWork.title}</h6>
+            <h6 className="mb-7 text-xl text-white">{resources.title}</h6>
             <ul>
-              {myWork.items.map(({ label, href }) => (
+              {resources.items.map(({ label, href }) => (
                 <li
                   key={label}
                   className="mt-3 text-base font-normal text-[#767E94] transition-all duration-150 ease-in hover:text-white hover:underline hover:decoration-[#00AAFF] hover:underline-offset-8">
-                  <a href={href} target="_blank">
-                    {label}
-                  </a>
+                  <Link href={href}>{label}</Link>
                 </li>
               ))}
             </ul>
@@ -131,13 +123,7 @@ const Footer = () => {
 
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 px-4 py-[26px] md:flex-row md:justify-between">
           <p className="text-center text-[#767E94]">
-            LearnNow © 2025. Developed by{' '}
-            <a
-              href="https://www.linkedin.com/in/abdulbasitprofile/"
-              target="_blank"
-              className="text-white">
-              Abdul Basit
-            </a>
+            Business Loan Affiliate Library © 2026. Guides, comparisons, and playbooks for monetizing business funding traffic.
           </p>
           <ul className="flex items-center gap-6">
             {socialLinks.map(({ name, icon, link }) => (
