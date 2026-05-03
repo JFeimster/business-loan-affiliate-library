@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 const navLinks = [
   { title: 'Home', link: '/' },
-  { title: 'Blogs', link: '/blogs' },
+  { title: 'Guides', link: '/blogs' },
   { title: 'Categories', link: '/categories' },
 ]
 
@@ -44,11 +44,11 @@ const Navbar = () => {
             className="inline-flex items-center gap-2 text-[#3e2647] hover:text-gray-950">
             <Image
               src="https://res.cloudinary.com/dyvkdwzcj/image/upload/v1709055594/logo-1_vo1dni.png"
-              alt="LearnNow"
+              alt="Business Loan Affiliate Library"
               width={25}
               height={25}
             />
-            <span className="text-lg font-bold">LearnNow</span>
+            <span className="text-lg font-bold">BLA Library</span>
           </Link>
           {/* nav links */}
           <div
